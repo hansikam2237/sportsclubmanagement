@@ -1,0 +1,180 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  background: #ffffff;
+  color: #10243e;
+  font-family: Arial, sans-serif;
+}
+
+.login-brand {
+  background: linear-gradient(145deg, #10464b, #12343c);
+  color: white;
+  padding: 55px 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-brand h1 {
+  font-size: 38px;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.login-brand h1 span,
+.brand-message h2 span {
+  color: #39d5d2;
+}
+
+.login-tagline {
+  color: #a7e7e5;
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.brand-message {
+  margin-top: 65px;
+}
+
+.brand-message h2 {
+  font-size: 48px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.brand-message > p {
+  color: #d9e9e9;
+  line-height: 1.7;
+  max-width: 360px;
+  margin-bottom: 32px;
+}
+
+.brand-feature {
+  margin: 23px 0;
+  font-size: 15px;
+}
+
+.login-form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 8%;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 470px;
+}
+
+.login-form h2 {
+  font-size: 40px;
+  margin: 0 0 10px;
+}
+
+.login-subtitle {
+  color: #64748b;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+.login-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px 0 9px;
+}
+
+.login-form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background: #ffffff;
+  color: #10243e;
+  caret-color: #168c8c;
+}
+
+.login-form input:focus {
+  border-color: #168c8c;
+  box-shadow: 0 0 0 3px #168c8c20;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 65px;
+}
+
+.show-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #168c8c;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login-button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 8px;
+  background: #168c8c;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-button:hover {
+  background: #116f73;
+}
+
+.login-footer {
+  margin-top: 28px;
+  color: #64748b;
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (max-width: 750px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-brand {
+    padding: 35px 8%;
+  }
+
+  .brand-message {
+    margin-top: 25px;
+  }
+
+  .brand-message h2 {
+    font-size: 36px;
+  }
+
+  .brand-feature {
+    margin: 14px 0;
+  }
+
+  .login-form-section {
+    padding: 45px 8%;
+  }
+
+  .login-form h2 {
+    font-size: 32px;
+  }
+}
